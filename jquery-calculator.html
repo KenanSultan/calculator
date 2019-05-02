@@ -125,7 +125,6 @@
                 addnumber(a) {
                     if (this.operator.length == 0) {
                         this.leftside += a
-                        console.log(this.leftside)
                         $("#first-number").text(this.leftside)
                     } else if (this.result === false) {
                         this.rightside += a
@@ -142,6 +141,7 @@
                     this.leftside = ""
                     this.rightside = ""
                     this.operator = ""
+                    this.result = false
                     $("#first-number").text("")
                     $("#second-number").text("")
                     $("#operator").text("")
